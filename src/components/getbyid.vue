@@ -10,7 +10,7 @@
         <h4>Employee Details</h4>
         <p>Name: {{ employee.name }}</p>
         <p>Salary: {{ employee.salary }}</p>
-\      </div>
+      </div>
       <div v-else>
         <p>No employee data available.</p>
       </div>
@@ -20,8 +20,10 @@
   <script setup>
   import { ref } from 'vue';
   import axios from 'axios';
+
   
   const employeeId = ref('');
+
   const employee = ref(null);
   
   async function fetchEmployee() {

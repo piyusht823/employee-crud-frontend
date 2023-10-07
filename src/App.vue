@@ -7,12 +7,13 @@
 <template>
 
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <div style="background-color: rgb(229, 239, 97);">
+  <div style="background-color: rgb(159, 225, 147);">
     <router-link :to="{name:'home'}">Home</router-link> | 
     <router-link :to="{name:'controller'}">Get All</router-link> | 
     <router-link :to="{name:'insertdata'}">Insert</router-link> | 
     <router-link :to="{name:'delete'}">Delete by ID</router-link> |
-    <router-link :to="{name:'getbyid'}">Get by ID</router-link> 
+    <router-link :to="{name:'getbyid'}">Get by ID</router-link> |
+    <router-link :to="{name:'update'}">Update</router-link> 
   </div>
 
   <router-view/>
