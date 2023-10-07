@@ -1,12 +1,21 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Controller from './components/controller.vue';
+// import HelloWorld from './components/HelloWorld.vue'
+// import Controller from './components/controller.vue';
+// import Employeebyid from './components/employeebyid.vue';
 </script>
 
 <template>
 
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <Controller/>
+  <div style="background-color: rgb(229, 239, 97);">
+    <router-link :to="{name:'home'}">Home</router-link> | 
+    <router-link :to="{name:'controller'}">Get All</router-link> | 
+    <router-link :to="{name:'insertdata'}">Insert</router-link> | 
+    <router-link :to="{name:'delete'}">Delete by ID</router-link> |
+    <router-link :to="{name:'getbyid'}">Get by ID</router-link> 
+  </div>
+
+  <router-view/>
 </template>
 
 <style scoped>

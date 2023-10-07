@@ -39,15 +39,17 @@
 
    <template>
     <div>
-      <h2>Vue.js App</h2>
-      <button @click="fetchEmployee">Fetch Data</button>
-      <p>Data from Spring Boot: {{ employee }}</p>
+      <h3>Get all Employee</h3>
+      <button @click="fetchEmployee">FetchAll</button>
+      <p>Data from Spring Boot:</p><br>
+      <p v-for="emp in employee">{{ emp.id }} {{ emp.name }} {{ emp.salary }}</p>
     </div>
   </template>
   
 <script setup>
 import {ref, onMounted} from 'vue'
 import axios from 'axios';
+
 
 const employee = ref([])
 
